@@ -1,0 +1,9 @@
+.DS_Store
+.fleet/
+.idea/
+hapi.postgress.data/
+data/
+target/
+
+# Ignored file for other branch
+.installed
