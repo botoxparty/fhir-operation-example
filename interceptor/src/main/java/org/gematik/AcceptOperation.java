@@ -8,6 +8,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class AcceptOperation {
 
+    public AcceptOperation() {
+        System.out.println("AcceptOperation component initialized");
+    }
+
     @Operation(name = "$accept", idempotent = true)
     public Parameters accept() {
         Parameters retVal = new Parameters();

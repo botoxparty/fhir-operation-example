@@ -13,13 +13,23 @@ spring:
     level:
       org.springframework: DEBUG
       ca.uhn.fhir: DEBUG
+      ca.uhn.fhir.jpa.term: TRACE
+      ca.uhn.fhir.validation: TRACE
 hapi:
   fhir:
+    # narrative_enabled: true
+    validation:
+      requests_enabled: true
+      suppress_best_practice_warnings: true
     openapi_enabled: true
     custom-bean-packages: org.example,org.gematik
-    custom-interceptor-classes: org.example.BearerAuthInterceptor,org.gematik.TestInterceptor
-    custom-operation-classes: org.gematik.AcceptOperation
+    custom-interceptor-classes: org.gematik.TestInterceptor
+    custom-operation-classes: org.gematik.AcceptOperation,org.gematik.PractitionerProvider
     implementationguides:
+      de_gematik_erezept_workflow_r4:
+        packageUrl: https://packages.simplifier.net/de.gematik.erezept-workflow.r4/-/de.gematik.erezept-workflow.r4-1.5.0-beta6.tgz
+        name: de.gematik.erezept-workflow.r4
+        version: 1.5.0-beta6  
       kbv_ita_erp:
         packageUrl: https://packages.simplifier.net/kbv.ita.erp/-/kbv.ita.erp-1.1.2.tgz
         name: kbv.ita.erp

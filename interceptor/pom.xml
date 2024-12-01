@@ -4,7 +4,7 @@
 
   <groupId>org.example</groupId>
   <artifactId>interceptor-maven</artifactId>
-  <version>6.4.6</version>
+  <version>7.6.0</version>
   <packaging>jar</packaging>
 
   <name>interceptor-maven</name>
@@ -28,12 +28,12 @@
     <dependency>
       <groupId>ca.uhn.hapi.fhir</groupId>
       <artifactId>hapi-fhir-server</artifactId>
-      <version>6.4.6</version>
+      <version>7.6.0</version>
     </dependency>
     <dependency>
       <groupId>ca.uhn.hapi.fhir</groupId>
       <artifactId>hapi-fhir-structures-r4</artifactId>
-      <version>6.4.6</version>
+      <version>7.6.0</version>
     </dependency>
     <dependency>
       <groupId>jakarta.servlet</groupId>
