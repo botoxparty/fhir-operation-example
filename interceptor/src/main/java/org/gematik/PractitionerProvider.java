@@ -15,6 +15,10 @@ import java.util.UUID;
 @Component
 public class PractitionerProvider implements IResourceProvider {
 
+    public PractitionerProvider() {
+        System.out.println("PractitionerProvider component initialized");
+    }
+
     @Operation(name = "$obfuscateName", idempotent = true)
     public Parameters obfuscateName(
         @OperationParam(name = "oldName", min = 1) StringType theOldName
