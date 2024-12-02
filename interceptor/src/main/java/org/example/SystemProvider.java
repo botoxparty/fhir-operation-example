@@ -1,4 +1,4 @@
-package org.gematik;
+package org.example;
 
 import ca.uhn.fhir.rest.annotation.Operation;
 import org.hl7.fhir.r4.model.Parameters;

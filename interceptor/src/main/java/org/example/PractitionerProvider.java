@@ -1,4 +1,4 @@
-package org.gematik;
+package org.example;
 
 import ca.uhn.fhir.rest.api.server.RequestDetails;
 import ca.uhn.fhir.rest.server.IResourceProvider;

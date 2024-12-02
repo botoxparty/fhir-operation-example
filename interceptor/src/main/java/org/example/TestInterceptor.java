@@ -1,4 +1,4 @@
-package org.gematik;
+package org.example;
 
 import ca.uhn.fhir.interceptor.api.Hook;
 import ca.uhn.fhir.interceptor.api.Interceptor;
